@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Group Profiles - Web Programming Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles and Reset */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Changed to a soft pink background */
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.5s;
+        }
+
+        /* Page Header Styling - Vibrant and inviting */
+        .page-header {
+            background: linear-gradient(135deg, #ec4b7b 0%, #ff6e87 100%); /* Adjusted gradient to be pink/red-toned */
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header h1 {
+            margin: 0 0 5px 0;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .page-header h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.5em;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .page-header p {
+            font-size: 1.1em;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+
+        /* Main Content Container - Elevated card style */
+        .members-list-container {
+            max-width: 800px;
+            margin: -30px auto 60px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .members-list-container h2 {
+            text-align: center;
+            color: #ec4b7b; /* Primary accent color adjusted to pink/red */
+            font-size: 2em;
+            font-weight: 600;
+            border-bottom: 3px solid #fce4ec; /* Adjusted border color */
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* List and Item Styling */
+        .members-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .member-item {
+            border: none;
+            border-radius: 8px;
+            background-color: #fff9fb; /* Slightly darker than container for contrast */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Item Hover Effect - More noticeable and sleek */
+        .member-item:hover {
+            background-color: #ffffff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(236, 75, 123, 0.2); /* Clearer hover shadow adjusted to pink */
+            border: 2px solid #ff6e87; /* Highlight border on hover adjusted */
+        }
+
+        /* Link Styling (The Member Name) */
+        .member-item a {
+            display: flex;
+            align-items: center;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.15em;
+            font-weight: 600;
+        }
+        
+        /* Icon styling (using a pseudo-element for a simple emoji/icon) */
+        .member-item a::before {
+            content: '👤';
+            font-size: 1.2em;
+            margin-right: 15px;
+            color: #ec4b7b; /* Icon color adjusted */
+            transition: transform 0.3s;
+        }
+        
+        .member-item:hover a::before {
+            transform: scale(1.1) rotate(5deg);
+            color: #ff6e87; /* Icon color on hover adjusted */
+        }
+
+
+        /* Footer Styling - Clean and subtle */
+        .page-footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #dcdcdc;
+            color: #6c757d;
+            font-size: 0.9em;
+            background-color: #f8f8f8;
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .page-header {
+                padding: 60px 15px 40px;
+            }
+            .page-header h1 {
+                font-size: 2.2em;
+            }
+            .members-list-container {
+                margin: -20px 15px 40px;
+                padding: 20px;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <header class="page-header">
+        <h1>🚀 Group Project Team</h1>
+        <h2>WEB PROGRAMMING</h2>
+        <p>Meet the members behind the project. Click a name to view their detailed profile!</p>
+    </header>
+
+    <main class="members-list-container">
+        <h2>✨ Team Members ✨</h2>
+        
+        <ul class="members-list">
+            <li class="member-item">
+                <a href="harsha.html">Harsha Hettiarachchi</a>
+            </li>
+            <li class="member-item">
+                <a href="Anushika.html">Anushika Sewwandi</a>
+            </li>
+            <li class="member-item">
+                <a href="hashani.html">Hashani Rajapaksha</a>
+            </li>
+            <li class="member-item">
+                <a href="Akila.html">Akila Thiunuwan</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="page-footer">
+        <p>Built with Passion | &copy; 2025 Group Project - Web Programming</p>
+    </footer>
+
+</body>
+</html>
